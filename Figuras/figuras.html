@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="figuras.css">
+    <title>Figuras Geometricas | Curso practico JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras Geometricas</h1>
+        <p>Este es el primer taller del curso practico de javascript</p>
+    </header>
+    <section>
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form id="Cuadrado">
+            <label for="InputCuadrado"></label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+        </form>
+
+
+        <h2>Calcular el area y perimetro de un triangulo</h2>
+        <form id="Triangulo">
+            <label for="InputTriangulo"></label>
+            <input id="InputTrianguloL1" type="number">
+            <input id="InputTrianguloL2" type="number">
+            <input id="InputTrianguloL3" type="number">
+
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+            <input id="InputTrianguloBase" type="number">
+            <input id="InputTrianguloAltura" type="number">
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+        </form> 
+
+
+
+        <h2>Calcular Altura de Triangulo Isoceles</h2>
+        <form id="Isoceles">
+            <label for="InputIsoceles"></label>
+            <h3>Lado 1: </h3>
+            <input id="InputIsocelesL1" type="number">
+            <h3>Lado 2: </h3>
+            <input id="InputIsocelesL2" type="number">
+            <h3>Lado Base: </h3>
+            <input id="InputIsocelesLB" type="number">
+            <button type="button" onclick="CalcularIsoceles()">Calcular altura de Triangulo Isoceles</button>
+
+        </form>
+
+
+        <h2>Calcular Diametro, Perimetro y Area de un Circulo</h2>
+        <form id="Circulo">
+            <label for="InputCirculoRadio"></label>
+            <input id="InputCirculoRadio" type="number">
+            <button type="button" onclick="calcularTodoCirculo()">Calcular el area</button>
+            <!-- <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaCirculo()">Calcular el area</button> -->
+        </form>
+    </section>
+
+    <script src="figuras.js"></script>
+</body>
+</html>
